@@ -158,7 +158,7 @@ li {
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: 320px;
 }
 
 .video-wrapper {
@@ -167,7 +167,7 @@ li {
 
 img.video {
     height: auto;
-    width: 370px;
+    width: 320px;
     border-radius: 6px;
     border-right: 8px solid var(--c-border);
     border-bottom: 8px solid var(--c-border);
