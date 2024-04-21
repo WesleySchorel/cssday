@@ -124,18 +124,15 @@
 </div>
 
 <footer>
-    <label for="yearSelect">Select Year:</label>
-    <select id="yearSelect" bind:value={selectedYear} on:change={handleYearChange}>
-        <option value="2013">2013</option>
-        <option value="2014">2014</option>
-        <option value="2015">2015</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-        <option value="2019">2019</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-    </select>
+	<ul>
+		{#each [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023] as year}
+			<li>
+				<a style="color: white;" href="#" on:click={() => handleYearChange({ target: { value: year } })}>
+					{year}
+				</a>
+			</li>
+		{/each}
+	</ul>
 </footer>
 
 
@@ -218,17 +215,16 @@
 		text-decoration: none;
 	}
 
-	ul {
+	.content ul {
 		display: grid;
 		gap: 2rem;
-		column-gap: 2rem;
+		column-gap: 3rem;
 	}
 
-	li {
+	.content li {
 		list-style: none;
 		display: flex;
 		flex-direction: column;
-		width: 320px;
 	}
 
 	.video-wrapper {
@@ -245,6 +241,7 @@
 	}
 
 	img.video:hover {
+        border-width: 0;
 		filter: brightness(80%);
 	}
 
@@ -294,8 +291,17 @@
     footer {
         background-color: #333333;
         color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 10rem;
         width: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 
 	@media (min-width: 868px) {
