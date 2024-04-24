@@ -143,7 +143,7 @@
 		techniques that can stand the test of time, and we tend to stay away from hypes.
 	</p>
 	<a href="https://www.youtube.com/@WebConferencesAmsterdam" target="_blank">
-		<img class="socials" src={YouTube} alt="" />
+		<img class="socials" src={YouTube} alt="Youtube channel link" />
 	</a>
 </div>
 
