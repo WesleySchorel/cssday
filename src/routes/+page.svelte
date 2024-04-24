@@ -135,10 +135,7 @@
 </div>
 
 <div class="sub-footer">
-	<img
-		src={YouTubeProfile}
-		alt=""
-	/>
+	<img src={YouTubeProfile} alt="" />
 	<p>
 		We curate and organise deep-diving, single-track, content-focused web conferences, in Amsterdam.
 		Most sessions, about 45 minutes each, include a Q&A session with the speaker. We aim to cover
@@ -209,16 +206,18 @@
 		margin-top: -2.5rem;
 	}
 
-	.speakers a:nth-child(even) {
-		margin-top: -1rem;
+	.speakers a {
 		height: 8rem;
 		width: 8rem;
+		transition: 0.2s;
+	}
+
+	.speakers a:nth-child(even) {
+		margin-top: -1rem;
 		transform: rotate(2deg);
 	}
 
 	.speakers a:nth-child(odd) {
-		height: 8rem;
-		width: 8rem;
 		transform: rotate(-2deg);
 	}
 
@@ -381,6 +380,10 @@
 
 		ul {
 			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.speakers a:hover {
+			filter: brightness(80%);
 		}
 
 		img.video:hover {
