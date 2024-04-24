@@ -2,7 +2,9 @@
 	import Header from '$lib/components/header.svelte';
 
 	import Reload from '$lib/assets/reload.svg';
+	import YouTubeProfile from '$lib/assets/youtubeprofile.jpg';
 	import YouTube from '$lib/assets/youtube.svg';
+
 	import { onMount } from 'svelte';
 
 	let talks = [];
@@ -134,7 +136,7 @@
 
 <div class="sub-footer">
 	<img
-		src="https://yt3.googleusercontent.com/5cttMPad9-HlWmWZr5cxeUH3CYt9pWNHDy1lAm437OuU58s1GDvKEv22YZHwb-hPiwikrkSSww=s176-c-k-c0x00ffffff-no-rj"
+		src={YouTubeProfile}
 		alt=""
 	/>
 	<p>
